@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+
+}
+
+</style>
+
+<script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Chainakon sarisee";
+    }
+</script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/temp/index.html" class="w3-bar-item w3-button">Home</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">JavaScript</a>
+      <a href="#menu" class="w3-bar-item w3-button">API</a>
+    </div>
+  </div>
+</div>
+
+
+<div>
+
+
+    <h1>JavaScript</h1>
+    
+    
+    <hr>
+    <h2>Click to change</h2>
+    <p id="demo2">Hi</p>
+    <button onclick="myFunction()">Click me</button>
+    
+
+    <hr>
+    <h2> A - Z</h2>
+    <p id="demo">Hi</p>
+
+    </div>
+    <!-- Footer -->
+
+</div>
+    <div>
+
+    </div class=center>
+    <script>
+      //document.getElementById("demo").innerHTML = "Hello World";
+    
+      function printAlphabets() {
+      // สร้างตัวแปรเพื่อเก็บตัวอักษร A-Z
+      const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    
+      // ใช้ forEach เพื่อวนลูปผ่านทุกตัวอักษร
+      alphabets.split('').forEach((alphabet, index) => {
+        // ใช้ setTimeout เพื่อกำหนดระยะเวลาการแสดงผล
+        setTimeout(() => {
+          document.getElementById("demo").innerHTML = alphabet;
+          console.log(alphabet);
+        }, index * 1000); // 1000 milliseconds = 1 วินาที
+      });
+    }
+    printAlphabets();
+    
+      function myFunction() {
+        document.getElementById("demo2").innerHTML = "Chainakon";
+    }
+    
+      function myFunction2() {
+
+      let x = document.getElementById("numb").value;
+
+      let text;
+      if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+      } else {
+        text = "Input OK";
+      }
+      document.getElementById("demo3").innerHTML = text;
+    }
+
+    
+    
+    </script>
+        </div>
+<!-- End page content -->
+</div>
+
+
+
+</body>
+</html>
